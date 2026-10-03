@@ -162,13 +162,11 @@ else {
     <div class="button-container col-6">
 
 <?php if(isset($_SESSION["user_id"])) { ?>
-
-    <a href="#"
-       class="btn btn-primary"
-       onclick="alert('Booking feature coming soon!'); return false;">
+<a href="booking.php?property_id=<?php echo $pg_id; ?>"
+       class="btn btn-primary">
        Book Now
     </a>
-
+    
 <?php } else { ?>
 
     <a href="#"
